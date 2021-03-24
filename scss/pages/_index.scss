@@ -1,0 +1,115 @@
+.presentacion {
+    margin: 5em;
+    display: grid;
+
+    h2 {
+        text-align: center;
+    }
+    
+
+    p {
+        text-align: justify;
+        width: 70%;
+    }
+
+    .persona {
+        @include flex-center;
+        margin: 2em;
+        height: 400px;
+    }
+
+    .reverse {
+        flex-direction: row-reverse;
+    }
+
+    .img {
+        width: 30%;
+        height: 100%;
+        border-radius: 1em;
+        margin: 1em .5em;
+    }
+
+    #juan {
+        background: url("/images/foto1.jpg") no-repeat center;
+        background-size: cover;
+        border-top: 5px chartreuse;
+    }
+
+    #caro {
+        background: url("/images/foto2.jpg") no-repeat center;
+        background-size: cover;
+    }
+
+
+    .parrafos {
+        margin: 0 3em;
+        width: 70%;
+    }
+
+    .parrafos p {
+        width: 100%;
+    }
+}
+
+.que-ofrecemos {
+    background-color: $color-bg;
+    width: 100%;
+
+    h2 {
+        color: $color-blanco;
+        text-align: center;
+        padding: 1em;
+    }
+
+    h3 {
+        color: $color-blanco;
+        text-align: center;
+        width: 63%;
+    }
+
+    .iconos-flex {
+        // @include flex-center;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-items: stretch;
+        align-items: center;
+        width: 80%;
+        padding-bottom: 2em;
+
+        article {
+            @include flex-center;
+            flex-direction: column;
+            text-align: center;
+
+            img {
+                margin: 1em;
+            }
+        }
+    }
+}
+
+.ultimos-videos {
+
+    height: 28em;
+
+    .videito{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    
+
+    h2 {
+        text-align: center;
+        padding: 1em;
+    }
+
+
+    
+}
+
+#carouselExampleInterval{
+
+   position: absolute;
+}
